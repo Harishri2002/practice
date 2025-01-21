@@ -1,0 +1,92 @@
+.newcollections {
+    text-align: center;
+    margin: 20px;
+    font-family: "Poppins", sans-serif; /* Updated font */
+}
+
+.newcollections h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.newcollections hr {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin: 10px auto;
+    border: none;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.05); /* Shadow added to borders */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-bottom: 1px solid #ddd;
+}
+
+.item .details {
+    padding: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif; /* Updated font */
+}
+
+.item .details h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.item .details p {
+    color: #777; /* Slightly darker text for better readability */
+    margin: 5px 0;
+    font-size: 0.9em; /* Adjusted font size */
+}
+
+.item .details .price {
+    font-weight: bold;
+    color: #e91e63;
+    margin-top: 5px;
+    font-size: 1em; /* Adjusted font size */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .collections {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .collections {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .collections {
+        grid-template-columns: 1fr; /* 1 image per row */
+    }
+}

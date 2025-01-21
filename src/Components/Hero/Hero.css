@@ -1,0 +1,97 @@
+.hero {
+    width: 100%; /* Full width of the screen */
+    height: 100vh; /* Full viewport height */
+    background-image: url('../Assets/hero1.png'); /* Ensure the path is correct */
+    background-size: cover; /* Ensure the image covers the full container */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center; /* Center the image */
+    position: relative; /* Required for overlay and content */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1; /* Ensures overlay is below the content */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Places content above the overlay */
+    color: white; /* Text color for contrast */
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block; /* Required for typing effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid white; /* Cursor effect */
+    animation: typing 6s steps(40, end), blink 0.7s step-end infinite;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    animation: fadeIn 2s 0.5s forwards; /* Delayed fade-in animation */
+    opacity: 0;
+}
+
+.hero-content button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards; /* Button fades in with delay */
+}
+
+.hero-content button:hover {
+    background-color: #e6b800; /* Hover effect for button */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; 
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white; 
+    }
+}
+
+/* Text animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

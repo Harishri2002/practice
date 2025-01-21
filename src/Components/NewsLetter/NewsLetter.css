@@ -1,0 +1,58 @@
+/* NewsLetter.css */
+
+.newsletter {
+    background-color: #c0c6ef; /* Light blue background for a refreshing look */
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.newsletter input[type="email"] {
+    width: 40%;
+    padding: 15px;
+    border: 2px solid #007BFF; /* Increased border size */
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.newsletter input[type="email"]:focus {
+    border-color: #0056b3; /* Highlight input on focus */
+}
+
+.newsletter button {
+    padding: 15px 20px;
+    background-color: #007BFF; /* Blue background for the button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
