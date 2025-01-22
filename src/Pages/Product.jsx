@@ -8,7 +8,7 @@ const Product = () => {
     const { all_product } = useContext(ShopContext); // Destructure all_product from context
     const { productId } = useParams(); // Get productId from route params
     console.log('Product ID from URL:', productId);  // Debugging log
-
+    
     const product = all_product.find((e) => e.id === Number(productId)); // Find matching product
     console.log('Product found:', product);  // Debugging log
 

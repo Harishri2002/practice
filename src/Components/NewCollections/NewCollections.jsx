@@ -1,6 +1,6 @@
 import React from "react";
 import './NewCollections.css';
-import new_collections from '../Assets/new_collections'; // Ensure this path is correct
+import all_product from '../Assets/all_product'; // Ensure this path is correct
 import Item from "../Item/Item";
 
 const NewCollections = () => {
@@ -9,8 +9,8 @@ const NewCollections = () => {
             <h1>NEW COLLECTIONS</h1>
             <hr />
             <div className="collections">
-                {Array.isArray(new_collections) && new_collections.length > 0 ? (
-                    new_collections.map((item, i) => (
+                {Array.isArray(all_product) && all_product.length > 0 ? (
+                    all_product.map((item, i) => (
                         <Item
                             key={i}
                             id={item.id}

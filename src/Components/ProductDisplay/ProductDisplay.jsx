@@ -7,11 +7,7 @@ const ProductDisplay = ({ product }) => {
             {/* Left Section */}
             <div className="productdisplay-left">
                 <div className="productdisplay-img-list">
-                    {/* Display thumbnails */}
                     <img src={product.image} alt="Thumbnail 1" />
-                    <img src={product.image} alt="Thumbnail 2" />
-                    <img src={product.image} alt="Thumbnail 3" />
-                    <img src={product.image} alt="Thumbnail 4" />
                 </div>
                 <div className="productdisplay-img">
                     {/* Main Product Image */}
@@ -23,17 +19,6 @@ const ProductDisplay = ({ product }) => {
             <div className="productdisplay-right">
                 <h1>{product.name}</h1>
                 <h2>Welcome to product page</h2>
-
-                {/* Commented out optional star rating section */}
-                {/* Uncomment and update this section as needed */}
-                {/* <div className="productdisplay-right-star">
-                    <img src="" alt="Star 1" />
-                    <img src="" alt="Star 2" />
-                    <img src="" alt="Star 3" />
-                    <img src="" alt="Star 4" />
-                    <img src="" alt="Star 5" />
-                    <p>Rating details here</p>
-                </div> */}
             </div>
         </div>
     );

@@ -10,8 +10,8 @@ const Item = ({ id, name, image, new_price, old_price }) => {
             <div className="item-details">
                 <h3>{name}</h3>
                 <p>
-                    <span className="new-price">₹{new_price}</span>
-                    <span className="old-price">₹{old_price}</span>
+                    <span className="new-price">New Price:₹{new_price}</span><br></br>
+                    <span className="old-price">Old Price:₹{old_price}</span>
                 </p>
             </div>
         </div>
